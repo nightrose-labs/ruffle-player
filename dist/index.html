@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>body,html{background:black;border:0;margin:0;overflow:hidden;padding:0;}ruffle-player{height:100vh;margin:0;overflow:hidden;padding:0;width:100vw;}</style>
+        <title>...</title>
+    </head>
+    <body>
+        <script src="./2/1.js"></script>
+        <script>const urlParams = new URLSearchParams(window.location.search);const fetchUrl = urlParams.get('f') == null ? "/dfl/1/00000000-0000-0000-0000-000000000000.bytes" : `/dfl/1/${urlParams.get('f')}.bytes`;window.RufflePlayer = window.RufflePlayer || {};const ruffle = window.RufflePlayer.newest();const player = ruffle.createPlayer();window.RufflePlayer.config = {    "allowNetworking": "none",    "allowScriptAccess": false,    "autoplay": "auto",    "forceAlign": true,    "forceScale": true,    "letterbox": "on",    "logLevel": "ERROR",    "openUrlMode": "deny",    "polyfills": false,    "scale": "showAll",    "unmuteOverlay": "on"};document.body.appendChild(player);player.load(fetchUrl);</script>
+    </body>
+</html>
